@@ -20,7 +20,8 @@
     "frontend",
     "blockchain",
     "ipfs",
-    "data"
+    "data",
+    "ai"
   ],
   "type": "module",
   "devDependencies": {
