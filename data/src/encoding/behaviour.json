@@ -1,0 +1,28 @@
+{
+  "index": 90,
+  "name": "aggression",
+  "description": "Represents how likely an entity is to initiate hostile actions.",
+  "definitionRole": "behaviour",
+  "definitionSubcategories": [
+    {
+      "subindex": 0,
+      "name": "passive",
+      "description": "Will not attack unless provoked."
+    },
+    {
+      "subindex": 1,
+      "name": "defensive",
+      "description": "Will retaliate if attacked but not initiate."
+    },
+    {
+      "subindex": 2,
+      "name": "neutral",
+      "description": "Unpredictable behavior depending on context."
+    },
+    {
+      "subindex": 3,
+      "name": "hostile",
+      "description": "Will attack any non-ally on sight."
+    }
+  ]
+}

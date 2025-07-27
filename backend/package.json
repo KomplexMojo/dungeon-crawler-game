@@ -1,0 +1,23 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "vitest run",
+    "test:e2e": "vitest run tests/generated-image.test.js",
+    "build": "asc assembly/index.ts --target release --outFile build/module.wasm --bindings esm --initialMemory 65536 && [ -f build/module.js ] && mv build/module.js build/module.mjs || true",
+    "deploy": "echo 'No deploy step for backend workspace'",
+    "dev": "echo 'No dev step for backend workspace'",
+    "start": "node build/module.mjs"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "type": "module",
+  "devDependencies": {
+    "assemblyscript": "^0.26.7",
+    "pngjs": "^7.0.0",
+    "vitest": "^3.2.4"
+  }
+}

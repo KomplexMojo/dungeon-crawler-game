@@ -1,0 +1,18 @@
+{
+  "index": 192,
+  "name": "Apply Poison",
+  "description": "Inflicts poison status over time.",
+  "definitionRole": "effect",
+  "definitionSubcategories": [
+    {
+      "subindex": 0,
+      "name": "Mild",
+      "description": "1 damage per turn."
+    },
+    {
+      "subindex": 1,
+      "name": "Severe",
+      "description": "5 damage per turn."
+    }
+  ]
+}

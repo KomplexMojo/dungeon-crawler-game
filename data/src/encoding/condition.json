@@ -1,0 +1,23 @@
+{
+  "index": 224,
+  "name": "burning",
+  "description": "The entity is on fire and takes damage over time.",
+  "definitionRole": "condition",
+  "definitionSubcategories": [
+    {
+      "subindex": 0,
+      "name": "duration",
+      "description": "Number of turns the burning condition lasts."
+    },
+    {
+      "subindex": 1,
+      "name": "intensity",
+      "description": "Severity of the burning effect on the entity."
+    },
+    {
+      "subindex": 2,
+      "name": "source",
+      "description": "The originating cause of the burning (e.g., fire trap, fireball spell)."
+    }
+  ]
+}

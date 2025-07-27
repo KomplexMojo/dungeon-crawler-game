@@ -1,0 +1,43 @@
+{
+  "$id": "http://example.com/schemas/event.schema.json",
+  "allOf": [
+    {
+      "$ref": "http://example.com/schemas/definitions/categoryFields"
+    },
+    {
+      "type": "object",
+      "required": [
+        "index",
+        "triggers",
+        "conditions",
+        "effects"
+      ],
+      "properties": {
+        "index": {
+          "type": "integer",
+          "minimum": 140,
+          "maximum": 159
+        },
+        "triggers": {
+          "type": "array",
+          "items": {
+            "$ref": "http://example.com/schemas/definitions/instanceTriplet"
+          }
+        },
+        "conditions": {
+          "type": "array",
+          "items": {
+            "$ref": "http://example.com/schemas/definitions/instanceTriplet"
+          }
+        },
+        "effects": {
+          "type": "array",
+          "items": {
+            "$ref": "http://example.com/schemas/definitions/instanceTriplet"
+          }
+        }
+      },
+      "additionalProperties": false
+    }
+  ]
+}

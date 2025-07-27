@@ -1,0 +1,18 @@
+{
+  "index": 160,
+  "name": "Health Below Threshold",
+  "description": "Trigger when health drops below a set level.",
+  "definitionRole": "trigger",
+  "definitionSubcategories": [
+    {
+      "subindex": 0,
+      "name": "25%",
+      "description": "Triggers below 25% health."
+    },
+    {
+      "subindex": 1,
+      "name": "10%",
+      "description": "Triggers below 10% health."
+    }
+  ]
+}

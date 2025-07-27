@@ -1,0 +1,32 @@
+{
+  "name": "dungeon-crawler-setup",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm run test --workspaces",
+    "build": "npm run build --workspaces",
+    "deploy": "npm run deploy --workspaces",
+    "dev": "npm run dev --workspaces",
+    "start": "npm run start --workspaces",
+    "test:e2e": "npm --workspace backend run test:e2e && npm --workspace ipfs run test:e2e && npm --workspace blockchain run test:e2e"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "private": true,
+  "workspaces": [
+    "backend",
+    "frontend",
+    "blockchain",
+    "ipfs",
+    "data"
+  ],
+  "type": "module",
+  "devDependencies": {
+    "@typechain/ethers-v6": "^0.5.1",
+    "@typechain/hardhat": "^9.1.0",
+    "ts-node": "^10.9.2",
+    "typechain": "^8.3.2"
+  }
+}

@@ -1,0 +1,58 @@
+[
+  {
+    "index": 40,
+    "name": "strength",
+    "description": "Represents the entity’s physical power and ability to affect the environment.",
+    "definitionRole": "characteristic",
+    "definitionSubcategories": [
+      {
+        "subindex": 0,
+        "name": "current",
+        "description": "The current strength value."
+      },
+      {
+        "subindex": 1,
+        "name": "maximum",
+        "description": "The maximum attainable strength."
+      },
+      {
+        "subindex": 2,
+        "name": "buff",
+        "description": "A temporary enhancement to strength."
+      },
+      {
+        "subindex": 3,
+        "name": "debuff",
+        "description": "A temporary reduction in strength."
+      }
+    ]
+  },
+  {
+    "index": 41,
+    "name": "mana",
+    "description": "Represents the entity’s magical energy or power reserves.",
+    "definitionRole": "characteristic",
+    "definitionSubcategories": [
+      {
+        "subindex": 0,
+        "name": "current",
+        "description": "The current mana value."
+      },
+      {
+        "subindex": 1,
+        "name": "maximum",
+        "description": "The maximum attainable mana."
+      },
+      {
+        "subindex": 2,
+        "name": "regeneration",
+        "description": "Mana regeneration rate over time."
+      },
+      {
+        "subindex": 3,
+        "name": "burn",
+        "description": "Rate of mana consumption when casting."
+      }
+    ]
+  }
+]

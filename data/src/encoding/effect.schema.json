@@ -1,0 +1,51 @@
+{
+  "$id": "http://example.com/schemas/effect.schema.json",
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "Effect Definition",
+  "description": "A single effect category with its subcategories.",
+  "required": ["index", "name", "description", "definitionRole", "definitionSubcategories"],
+  "properties": {
+    "index": {
+      "type": "integer",
+      "minimum": 192,
+      "maximum": 223
+    },
+    "name": {
+      "type": "string",
+      "maxLength": 32
+    },
+    "description": {
+      "type": "string",
+      "maxLength": 256
+    },
+    "definitionRole": {
+      "type": "string",
+      "const": "effect"
+    },
+    "definitionSubcategories": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["subindex", "name", "description"],
+        "properties": {
+          "subindex": {
+            "type": "integer",
+            "minimum": 0,
+            "maximum": 255
+          },
+          "name": {
+            "type": "string",
+            "maxLength": 32
+          },
+          "description": {
+            "type": "string",
+            "maxLength": 256
+          }
+        },
+        "additionalProperties": false
+      }
+    }
+  },
+  "additionalProperties": false
+}

@@ -1,0 +1,29 @@
+{
+  "events": [
+    {
+      "index": 140,
+      "name": "Enter Room",
+      "description": "Triggered when a character enters a new room.",
+      "locked": true,
+      "subindexes": []
+    },
+    {
+      "index": 141,
+      "name": "Use Item",
+      "description": "Occurs when a character uses an item from inventory.",
+      "subindexes": [
+        {
+          "subindex": 0,
+          "name": "Potion",
+          "description": "A consumable healing item."
+        }
+      ]
+    },
+    {
+      "index": 142,
+      "name": "Take Damage",
+      "description": "Occurs when a character takes any form of damage.",
+      "subindexes": []
+    }
+  ]
+}

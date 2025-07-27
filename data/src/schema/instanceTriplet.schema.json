@@ -1,0 +1,24 @@
+
+{
+  "$id": "http://example.com/schemas/definitions/instanceTriplet",
+  "type": "object",
+  "required": ["index", "subindex", "value"],
+  "properties": {
+    "index": {
+      "type": "integer",
+      "minimum": 0,
+      "maximum": 255
+    },
+    "subindex": {
+      "type": "integer",
+      "minimum": 0,
+      "maximum": 255
+    },
+    "value": {
+      "type": "integer",
+      "minimum": 0,
+      "maximum": 255
+    }
+  },
+  "additionalProperties": false
+}

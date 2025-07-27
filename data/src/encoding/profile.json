@@ -1,0 +1,46 @@
+{
+  "index": 0,
+  "name": "Goblin Ice Mage",
+  "description": "A magical goblin with icy powers and aggressive tendencies.",
+  "subcategories": [
+    {
+      "index": 0,
+      "name": "Cave Dweller",
+      "description": "Typically found in underground cave environments."
+    }
+  ],
+  "visualization": {
+    "pixels": [
+      {
+        "index": 0,
+        "R": 0,
+        "G": 100,
+        "B": 200,
+        "A": 255
+      },
+      {
+        "index": 1,
+        "R": 0,
+        "G": 120,
+        "B": 255,
+        "A": 255
+      }
+    ]
+  },
+  "characteristics": [
+    [40, 0, 10],  
+    [41, 1, 25]   
+  ],
+  "behaviours": [
+    [90, 0, 1]   
+  ],
+  "effects": [
+    [192, 0, 1]  
+  ],
+  "conditions": [
+    [224, 1, 0]   
+  ],
+  "triggers": [
+    [160, 0, 1]  
+  ]
+}

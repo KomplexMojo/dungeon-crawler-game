@@ -1,0 +1,115 @@
+{
+  "$id": "http://example.com/schemas/profile.schema.json",
+  "allOf": [
+    {
+      "$ref": "http://example.com/schemas/definitions/categoryFields"
+    },
+    {
+      "type": "object",
+      "required": [
+        "subcategories",
+        "visualization",
+        "characteristics",
+        "behaviours",
+        "effects",
+        "conditions",
+        "triggers"
+      ],
+      "properties": {
+        "index": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 39
+        },
+        "subcategories": {
+          "$ref": "http://example.com/schemas/definitions/definitionSubcategories"
+        },
+        "visualization": {
+          "type": "object",
+          "required": [
+            "pixels"
+          ],
+          "properties": {
+            "pixels": {
+              "type": "array",
+              "minItems": 0,
+              "maxItems": 256,
+              "description": "Array of pixel definitions representing the 16x16 visualization grid. Each pixel defines its RGBA values and position.",
+              "items": {
+                "type": "object",
+                "required": [
+                  "index",
+                  "R",
+                  "G",
+                  "B",
+                  "A"
+                ],
+                "properties": {
+                  "index": {
+                    "type": "integer",
+                    "minimum": 0,
+                    "maximum": 255
+                  },
+                  "R": {
+                    "type": "integer",
+                    "minimum": 0,
+                    "maximum": 255
+                  },
+                  "G": {
+                    "type": "integer",
+                    "minimum": 0,
+                    "maximum": 255
+                  },
+                  "B": {
+                    "type": "integer",
+                    "minimum": 0,
+                    "maximum": 255
+                  },
+                  "A": {
+                    "type": "integer",
+                    "minimum": 0,
+                    "maximum": 255,
+                    "default": 0
+                  }
+                },
+                "additionalProperties": false
+              }
+            }
+          },
+          "additionalProperties": false
+        },
+        "characteristics": {
+          "type": "array",
+          "items": {
+            "$ref": "http://example.com/schemas/definitions/instanceTriplet"
+          }
+        },
+        "behaviours": {
+          "type": "array",
+          "items": {
+            "$ref": "http://example.com/schemas/definitions/instanceTriplet"
+          }
+        },
+        "effects": {
+          "type": "array",
+          "items": {
+            "$ref": "http://example.com/schemas/definitions/instanceTriplet"
+          }
+        },
+        "conditions": {
+          "type": "array",
+          "items": {
+            "$ref": "http://example.com/schemas/definitions/instanceTriplet"
+          }
+        },
+        "triggers": {
+          "type": "array",
+          "items": {
+            "$ref": "http://example.com/schemas/definitions/instanceTriplet"
+          }
+        }
+      },
+      "additionalProperties": false
+    }
+  ]
+}
