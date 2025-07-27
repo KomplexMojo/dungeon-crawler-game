@@ -1,5 +1,5 @@
 ---
-title: "What's the Purpose of This?"
+title: "A Blog in the Era of Podcasts?"
 datePublished: Sun Jul 27 2025 19:45:46 GMT+0000 (Coordinated Universal Time)
 cuid: cmdm3a3ew000002l59tx0bqjn
 slug: whats-the-purpose-of-this
@@ -9,11 +9,11 @@ tags: decentralized-deveopment, ai-ipfs-webassembly-blockchain
 
 I have been working on various technical projects over a number of years with no record of the exploration. The equivalent is an explorer, exploring new terrain and not creating a map.
 
-I don’t expect this blog will reveal any insights that others haven’t already had, but perhaps my text will help other generate ideas for their own projects.
+I don’t expect this blog will reveal any insights that others haven’t already had, but perhaps my text will help other generate ideas for others as the embark on their own voyages with their own projects.
 
-I pursue software development and technology experimentation as a hobby. I hope the joy I experience in these explorations show through in this blog.
+Software development for me is about experimentation with technology. I pursue it as a hobby that helps me express my creativity. I hope the joy I experience in these explorations show through in this blog.
 
-I always explore technology in the context of a project with a purpose it make the exploration real.
+To make this an actual journey, it needs a destination. I always explore technology in the context of a project with a purpose it make the exploration real.
 
 My current focus for this exploration is a rogue-like dungeon crawler. The code is here:
 
@@ -27,9 +27,9 @@ The the implementation technologies are…
     
 3. WebAssembly for performance and portability. (I have some really crazy ideas that will need high performance number crunching.)
     
-4. AI through (Ollama with a Mistral LLM) to add as my central intelligence.
+4. AI through (Ollama with a Mistral LLM) to add as my central intelligence. I’ll swap this out with API accessed AI when the project gets more mature.
     
 
-I may add technologies as they arise and make sense, because why not.
+I may add technologies as they come across my radar, and if they make sense, because why not.
 
-I am using ChatGPT as my coding buddy to help me generate ideas and to help turn those ideas into code.
+Note that I am using ChatGPT as my AI buddy to help me generate ideas and to help turn those ideas into code.
